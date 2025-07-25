@@ -1,4 +1,8 @@
 anthropic
 
+chromadb tiktoken
+
+chromadb sentence-transformers
+
 
 python -m app.inference_engine.answer

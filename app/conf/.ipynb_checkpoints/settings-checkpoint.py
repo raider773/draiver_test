@@ -1,6 +1,10 @@
 class Settings:
     def __init__(self):
 
+
+        self.chunk_size = 100
+        self.chunk_overlap = 50
+
         #Tool Agent        
         self.tool__agent_model: str = "claude-sonnet-4-20250514"
         self.tool__agent_max_tokens: int = 1024
