@@ -57,3 +57,37 @@ class Settings:
                                         
                                         User query: {query}
                                         """
+        #QA Agent
+        self.question_answer__agent_model: str = "claude-sonnet-4-20250514"
+        self.question_answer__agent_max_tokens: int = 1024
+        self.question_answer__agent_temperature: float = 0.2
+        self.question_answer__agent_prompt : str =  """
+                                                    You are a helpful assistant.
+                                                    
+                                                    You are given:
+                                                    - A user query
+                                                    - Retrieved knowledge documents (if any)
+                                                    - Tool output (if any tools were used)
+                                                    
+                                                    Use all relevant information to answer the user's query clearly and helpfully.
+                                                    
+                                                    If the tool output provides a direct answer, you can use it. If the context helps clarify or expand on the answer, include it. If neither helps, use your own reasoning.
+                                                    
+                                                    User Query:
+                                                    {query}
+                                                    
+                                                    Tool Output:
+                                                    {tool_output}
+                                                    
+                                                    Retrieved Context:
+                                                    {context}
+                                                    
+                                                    Answer the user's query:
+                                                    """
+
+
+
+
+
+
+        
