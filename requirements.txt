@@ -1,0 +1,12 @@
+anthropic
+
+# Vector store and embeddings
+chromadb
+sentence-transformers
+
+# Token counting for LLMs
+tiktoken
+
+# Web API
+fastapi
+uvicorn[standard]
