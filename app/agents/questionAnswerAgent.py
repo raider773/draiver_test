@@ -24,9 +24,8 @@ class QuestionAnswerAgent:
         )
         return response.content[0].text
 
-    def answer_user(self, query: str, tool_output: str, context: str) -> str:
-        llm_input = self.knowledge_prompt.format(query=query, tool_output=tool_output, context=context)
-        print(llm_input)
+    def answer_user(self, query: str, tool_output: str, context: str, user_chat_history: str) -> str:
+        llm_input = self.knowledge_prompt.format(query=query, tool_output=tool_output, context=context, user_chat_history = user_chat_history)
         response = self._call_anthropic(llm_input)
         return response
         

@@ -64,6 +64,9 @@ class Settings:
         self.question_answer__agent_prompt : str =  """
                                                     You are a helpful assistant.
                                                     
+                                                    Here is the ongoing conversation history between you and the user:
+                                                    {user_chat_history}
+                                                    
                                                     You are given:
                                                     - A user query
                                                     - Retrieved knowledge documents (if any)

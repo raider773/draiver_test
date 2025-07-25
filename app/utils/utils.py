@@ -21,3 +21,6 @@ def get_france_weather(date: str) -> str:
 
 def make_reservation(activity: str, date: str) -> str:
     return f"Reservation confirmed for '{activity}' on {date}."
+
+def format_history(history):
+    return "\n".join([f"{msg['role'].capitalize()}: {msg['content']}" for msg in history])
