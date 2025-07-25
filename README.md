@@ -2,7 +2,14 @@
 
 # Chatbot with RAG and Tool Use
 
-This project allows users to interact with a chatbot that combines **retrieval-augmented generation (RAG)** and external tool use (such as weather or reservation tools) to provide accurate and useful responses.
+This project allows users to interact with a chatbot that combines **retrieval-augmented generation (RAG)** and external tool usage (such as weather and reservation tools) to provide accurate and helpful responses for tourists visiting France. The `knowledge_base` contains summaries of activities and attractions to explore in France.
+
+
+### Specific Scenarios Handled:
+- **Weather Queries**: The agent can fetch weather data based on user requests (e.g., "What is the weather in Paris this August?").
+- **Reservation Assistance**: The agent can assist with booking places for activities or events (e.g., "Book me a place at the Eiffel Tower").
+- **General Information**: The agent can answer general queries based on its knowledge base and retrieved documents (e.g., "Where can I get a coffee in Paris?").
+
 
 ## 🛠 How to Set Up the Project
 
@@ -27,6 +34,8 @@ This project allows users to interact with a chatbot that combines **retrieval-a
    ```
     
 3. **Load data**
+
+   
    If you need to load data
 
    
@@ -44,6 +53,8 @@ This project allows users to interact with a chatbot that combines **retrieval-a
    uvicorn main:app --reload
 
    ```
+
+   You will need to provide an ANTHROPIC_API_KEY inside main.py
 
 6. **Example Queries**
 
