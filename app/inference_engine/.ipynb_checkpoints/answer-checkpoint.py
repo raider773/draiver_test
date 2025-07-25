@@ -4,7 +4,7 @@ from app.agents.toolSelectorAgent import ToolSelectorAgent
 from app.agents.questionAnswerAgent import QuestionAnswerAgent
 from app.utils.utils import get_france_weather, make_reservation, format_history, search_similar_docs
 
-API_KEY = "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".strip() 
+API_KEY = ""
 tool_agent = ToolSelectorAgent(api_key=API_KEY)
 qa_agent = QuestionAnswerAgent(api_key=API_KEY)
 
