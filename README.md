@@ -2,7 +2,7 @@
 
 # Chatbot with RAG and Tool Use
 
-This project allows users to interact with a chatbot that combines **retrieval-augmented generation (RAG)** and external tool usage (such as weather and reservation tools) to provide accurate and helpful responses for tourists visiting France. The `knowledge_base` contains summaries of activities and attractions to explore in France.
+This project allows users to interact with a chatbot that combines **retrieval-augmented generation (RAG)** and external tool usage to provide responses for tourists visiting France. The `knowledge_base` contains summaries of activities and attractions to explore in France.
 
 
 ### Specific Scenarios Handled:
@@ -11,7 +11,7 @@ This project allows users to interact with a chatbot that combines **retrieval-a
 - **General Information**: The agent can answer general queries based on its knowledge base and retrieved documents (e.g., "Where can I get a coffee in Paris?").
 
 
-## 🛠 How to Set Up the Project
+## How to Set Up the Project
 
 1. **Clone or Download the Project**  
    Ensure you have the project files on your local machine.
