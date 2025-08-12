@@ -1,4 +1,4 @@
-# draiver_test
+# Chatbot for Draiver Company
 
 # Chatbot with RAG and Tool Use
 
